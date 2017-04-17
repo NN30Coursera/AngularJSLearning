@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app='MsgApp'>
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="customFilters.js"></script>
+    <title>Expressions And Interpolation</title>
+  </head>
+    <body>
+      <h1> Expressions and Interpolation example </h1>
+      <div  ng-controller='MsgController'>
+          {{name}} has a message for you: <br>
+
+          Original: {{sayMessage()}} <br>
+
+          Loves: {{sayLovesMessage()}}<br>
+
+          Truth: {{sayLovesMessage() | truth:"healthy":"Cookies"}} <br>
+
+          BIG Truth: {{sayLovesMessage() | truth:"healthy":"Cookies" | uppercase}}
+
+          <div>
+            Cost of each Cookies: {{cookieCost | currency : "Rupees " : 4}}
+            <button ng-click="feedYaakov()"> Feed Yaakov</button>
+            <br>
+            <img ng-src="/images/yaakov_{{stateOfYaakov}}.png">
+          </div>
+      </div>
+    </body>
+
+</html>

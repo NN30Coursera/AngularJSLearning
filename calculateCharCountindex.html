@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="calculateCharCount.js"></script>
+    <title>Calculate Char Count</title>
+  </head>
+  <body ng-app="calculateCharCountApp">
+
+    <div ng-controller="calculateCharCountController">
+      <div>Your Name:
+      <input type="text"
+      ng-model="name"
+      ng-keyup="displayNumeric();">
+    </div>
+    <div>The character count in the textfield is : {{totalValue}}</div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app='counterApp'>
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="watcher.js"></script>
+    <title>Watchers</title>
+  </head>
+    <body ng-controller='counterController'>
+      <h1> Watchers </h1>
+      <div>
+          <button ng-click="numberOfWatchers()"> Log # watchers</button><br>
+          <button ng-click="checkNormalCounter()"> Once Counter </button><br>
+          <button ng-click="checkUpCounter()"> UP Counter </button>
+      </div>
+
+    <h1>The Digest and Apply functionality Learning </h1>
+    <button ng-click="upCounterPartTwo()">Click to Increment </button><br>
+    The Value of the counter is: {{checkUpCounterPartTwo}}
+    </body>
+
+</html>
